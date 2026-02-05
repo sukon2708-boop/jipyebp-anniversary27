@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy Anniversary</title>
+
+  <!-- main style -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="shell center">
+
+      <!-- เอฟเฟกต์ลอย -->
+      <div id="fxLayer" aria-hidden="true"></div>
+
+      <!-- TITLE -->
+      <h2 id="titleText">มีของขวัญมาส่งให้คนพิเศษ</h2>
+
+      <!-- ✅ การ์ดขาวใบเดียว: รูป + เนื้อหา -->
+      <div class="white-card">
+
+        <!-- รูป (gift.png -> flowers.png) -->
+        <div class="gift-stage" id="giftStage">
+          <img
+            class="gift-img"
+            id="giftImg"
+            src="assets/gift.png"
+            alt="gift"
+            loading="eager"
+            decoding="async"
+          />
+        </div>
+
+        <!-- STEP 1 : Open gift (อยู่ในการ์ดเดียวกัน) -->
+        <div class="card-body" id="step1">
+          <p class="subtle">
+            ฮันแน่ ยิ้มก่อนเปิด<br />
+          </p>
+
+          <div style="margin-top:14px;">
+            <button class="btn" id="openGiftBtn">เปิดของขวัญ</button>
+          </div>
+        </div>
+
+        <!-- STEP 2 : Anniversary message (อยู่ในการ์ดเดียวกัน) -->
+        <div class="card-body" id="step2" style="display:none;">
+          <h2>Happy Anniversary </h2>
+
+          <p class="subtle">สุขสันต์วันครบรอบ</p>
+         
+          <div style="margin-top:16px;">
+            <a class="btn secondary" href="pass.html">ไปหน้าถัดไป</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+<!-- Floating Hearts Background -->
+<div class="bg-heart-layer">
+  <span>💗</span>
+  <span>💖</span>
+  <span>💕</span>
+  <span>💘</span>
+  <span>💞</span>
+  <span>💓</span>
+</div>
+
+  <!-- JS -->
+  <script src="js/anniversary.js"></script>
+</body>
+</html>

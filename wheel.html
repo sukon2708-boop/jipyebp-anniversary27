@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>วงล้อสุ่มตามใจ</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="shell center">
+      <h1>วงล้อสุ่มตามใจ</h1>
+      <p class="subtle">กดหมุนแล้วดูว่าได้อะไร </p>
+
+      <div class="wheel-wrap">
+  <canvas id="wheel" width="600" height="600"></canvas>
+
+  <div class="button-row">
+    <button class="btn" id="spinBtn">หมุนวงล้อ</button>
+    <a class="btn secondary" href="menu.html">ย้อนกลับ</a>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal center">
+      <h3>ผลลัพธ์ของวงล้อคือ…</h3>
+      <p id="resultText" style="font-size:18px; font-weight:800; color:#c24a6f;"></p>
+      <div class="row">
+        <button class="btn" id="closeModalBtn">ปิด</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/wheel.js"></script>
+  <div class="bg-heart-layer">
+  <span>💗</span>
+  <span>💖</span>
+  <span>💕</span>
+  <span>💘</span>
+  <span>💞</span>
+  <span>💓</span>
+</div>
+</body>
+</html>
